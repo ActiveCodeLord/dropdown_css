@@ -1,5 +1,6 @@
-body{
-    text-align: center;
+#parent-div{display: flex;
+    flex-direction: column;
+    
    
 }
 #main_div{
@@ -7,6 +8,8 @@ body{
     position: relative; 
     background-color:lightgrey;
     text-align: justify;
+    margin-bottom: 20px;
+    
 }
 .sub_main{
     position: absolute;
@@ -22,3 +25,18 @@ background-color: antiquewhite;
 }
 
 /* the display inline does not allow the free styling of the element with padding and margin as expected but if truely to make it behave as expected, consider making the styling of the block level element a display of inline-block and you will see the beauty */
+#container_for_fade_effect{
+    display: inline;
+    position: relative;
+    background: lightblue
+    
+}
+.child_container_for_fade_effect{
+    opacity: 0;
+    display: block;
+    
+}
+#container_for_fade_effect:hover > .child_container_for_fade_effect{
+    opacity: 1;
+    transition-duration: 30s;    
+}
