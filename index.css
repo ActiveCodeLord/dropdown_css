@@ -1,0 +1,24 @@
+body{
+    text-align: center;
+   
+}
+#main_div{
+    display: inline-block;
+    position: relative; 
+    background-color:lightgrey;
+    text-align: justify;
+}
+.sub_main{
+    position: absolute;
+    display: none;
+}
+li{
+    color:tomato;
+    list-style-type:none;
+}
+#main_div:hover > .sub_main{
+display:block;
+background-color: antiquewhite;
+}
+
+/* the display inline does not allow the free styling of the element with padding and margin as expected but if truely to make it behave as expected, consider making the styling of the block level element a display of inline-block and you will see the beauty */
